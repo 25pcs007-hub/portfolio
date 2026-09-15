@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIRIARASU S | B.Sc Computer Science Graduate & Aspiring Developer</title>
+  <meta name="description" content="Official portfolio of GIRIARASU S, a dedicated B.Sc Computer Science graduate seeking software development and IT career opportunities. Explore skills, education, and contact details.">
+  <meta name="keywords" content="Giriarasu S, Portfolio, B.Sc Computer Science, Software Developer, Python, C, C++, Web Development, Salem, Tamil Nadu">
+  <meta name="author" content="Giriarasu S">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GIRIARASU S | B.Sc Computer Science Portfolio">
+  <meta property="og:description" content="Entry-level Software Developer & Computer Science Graduate passionate about programming, problem solving, and technological innovation.">
+  <meta property="og:image" content="assets/profile.jpg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Favicon (SVG) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%236366f1'/><text x='50%' y='63%' font-family='sans-serif' font-size='52' font-weight='800' fill='white' text-anchor='middle'>GS</text></svg>">
+</head>
+<body>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="header">
+    <div class="container nav-wrapper">
+      <a href="#home" class="brand-logo" aria-label="Giriarasu S Home">
+        <span class="logo-box">GS</span>
+        <div class="logo-text">
+          <span class="name">GIRIARASU S</span>
+          <span class="role">B.Sc Computer Science</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#activities" class="nav-link">Activities</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Download Resume Button (Header CTA) -->
+        <button id="header-resume-btn" class="btn btn-outline btn-sm resume-trigger-btn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume</span>
+        </button>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="mobile-menu-btn" class="hamburger-btn" aria-label="Open mobile menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-menu" class="mobile-drawer">
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-link active">Home</a></li>
+        <li><a href="#about" class="mobile-link">About Me</a></li>
+        <li><a href="#education" class="mobile-link">Education</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#activities" class="mobile-link">Activities</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <button class="btn btn-primary btn-block resume-trigger-btn">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download Resume
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="glow-orb glow-orb-1"></div>
+      <div class="glow-orb glow-orb-2"></div>
+      
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="pulse-dot"></span>
+            <span>Fresher • Actively Seeking Opportunities</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Hello, I'm <br>
+            <span class="gradient-text">GIRIARASU S</span>
+          </h1>
+          
+          <div class="hero-subtitle-box">
+            <span class="hero-tag">B.Sc Computer Science</span>
+            <span class="hero-tag-secondary">Aspiring Software Developer</span>
+          </div>
+
+          <p class="hero-description">
+            A passionate, enthusiastic Computer Science student eager to step into the software and IT industry. Driven by curiosity for programming, hands-on learning, and building purposeful solutions while growing alongside forward-thinking teams.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-primary">
+              <span>Get In Touch</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <button class="btn btn-secondary resume-trigger-btn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </button>
+          </div>
+
+          <div class="quick-stats-row">
+            <div class="stat-item">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Core Tech Skills</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Dedication & Drive</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">Immediate</span>
+              <span class="stat-label">Joining Availability</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card-wrapper">
+            <div class="profile-card-glow"></div>
+            <div class="profile-card">
+              <div class="profile-image-container">
+                <img src="assets/profile.jpg" alt="Giriarasu S - B.Sc Computer Science Graduate" class="profile-img" loading="eager">
+              </div>
+              
+              <div class="floating-badge badge-top-right">
+                <div class="badge-icon-wrap">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="badge-title">CS Degree</div>
+                  <div class="badge-sub">Muthayammal College</div>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-left">
+                <div class="badge-icon-wrap code-icon">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="badge-title">C • C++ • Python</div>
+                  <div class="badge-sub">Core Programming</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">About Me</span>
+          <h2 class="section-title">Motivated Mind, Ready To Create & Learn</h2>
+          <p class="section-subtitle">A glimpse into my background, aspirational vision, and work ethics.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Story & Career Objective -->
+          <div class="about-main-card glass-card">
+            <div class="card-icon-header">
+              <div class="icon-circle">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div>
+                <h3 class="card-title">Personal Summary</h3>
+                <span class="card-sub">Salem, Tamil Nadu, India</span>
+              </div>
+            </div>
+
+            <p class="about-text">
+              I am <strong>Giriarasu S</strong>, a disciplined and enthusiastic <strong>B.Sc. Computer Science</strong> student from Salem, Tamil Nadu. Having developed a solid grounding in programming concepts, data structures, and computer science principles, I am eagerly looking forward to starting my professional journey in the software and IT industry.
+            </p>
+
+            <div class="career-objective-box">
+              <div class="objective-header">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+                <h4>Career Objective</h4>
+              </div>
+              <blockquote class="objective-quote">
+                "To secure an entry-level position in a progressive and growth-oriented organization where I can continuously upgrade my technical and analytical skills, solve meaningful computational challenges, and contribute whole-heartedly to organizational success through unwavering dedication, adaptability, and hard work."
+              </blockquote>
+            </div>
+
+            <div class="about-quick-info">
+              <div class="info-pill">
+                <span class="info-label">Degree:</span>
+                <span class="info-val">B.Sc Computer Science</span>
+              </div>
+              <div class="info-pill">
+                <span class="info-label">Current Status:</span>
+                <span class="info-val highlight">Ready for Immediate Hire</span>
+              </div>
+              <div class="info-pill">
+                <span class="info-label">Relocation:</span>
+                <span class="info-val">Open to relocate</span>
+              </div>
+              <div class="info-pill">
+                <span class="info-label">Languages:</span>
+                <span class="info-val">English & Tamil</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Pillar Strengths -->
+          <div class="about-pillars">
+            <div class="pillar-card glass-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <div class="pillar-content">
+                <h4>Eager & Adaptive Learner</h4>
+                <p>Quick to absorb new programming languages, frameworks, and workflows with an open, coachable attitude.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card glass-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="pillar-content">
+                <h4>Strong Algorithmic Basics</h4>
+                <p>Rooted in core C, C++, and Python logic building, procedural routines, and computer architecture.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card glass-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="pillar-content">
+                <h4>Team-Centric Attitude</h4>
+                <p>Proven through competitive sports and group activities—bringing positive energy, active listening, and reliability.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card glass-card">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <div class="pillar-content">
+                <h4>Professional Work Ethic</h4>
+                <p>Committed to punctuality, detail-oriented task execution, multitasking ability, and consistent self-improvement.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Academic Background</span>
+          <h2 class="section-title">Education & Milestones</h2>
+          <p class="section-subtitle">Chronological progression of my academic qualifications and computer science foundational studies.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1: Degree -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-level">Undergraduate Degree</span>
+                  <h3 class="timeline-degree">Bachelor of Science in Computer Science (B.Sc CS)</h3>
+                  <h4 class="timeline-institution">Muthayammal College of Arts & Science</h4>
+                </div>
+                <div class="timeline-badge-group">
+                  <span class="badge-status-chip pursuing">Pursuing</span>
+                  <span class="badge-score">48.40%</span>
+                </div>
+              </div>
+              <p class="timeline-desc">
+                Comprehensive study of computer software, programming languages, operating systems, and computer hardware fundamentals. Developed practical programming aptitude in C, C++, and Python alongside web markup and scripting.
+              </p>
+              <div class="timeline-tags">
+                <span class="tech-tag">Data Structures</span>
+                <span class="tech-tag">C & C++ Programming</span>
+                <span class="tech-tag">Operating Systems</span>
+                <span class="tech-tag">Web Essentials (HTML/CSS)</span>
+                <span class="tech-tag">Database Basics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: HSC -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <circle cx="12" cy="12" r="8"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-level">Higher Secondary Certificate (HSC - 12th)</span>
+                  <h3 class="timeline-degree">Higher Secondary Education</h3>
+                  <h4 class="timeline-institution">Government Boys Higher Secondary School</h4>
+                </div>
+                <div class="timeline-badge-group">
+                  <span class="badge-status-chip completed">Completed</span>
+                  <span class="badge-score">48.00%</span>
+                </div>
+              </div>
+              <p class="timeline-desc">
+                Completed higher secondary state board curriculum with strong focus on science, mathematics, analytical reasoning, and basic computing concepts.
+              </p>
+              <div class="timeline-tags">
+                <span class="tech-tag">Tamil Nadu State Board</span>
+                <span class="tech-tag">Mathematics</span>
+                <span class="tech-tag">Science Foundations</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: SSLC -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <circle cx="12" cy="12" r="6"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-level">Secondary School Leaving Certificate (SSLC - 10th)</span>
+                  <h3 class="timeline-degree">Secondary School Education</h3>
+                  <h4 class="timeline-institution">Government Higher Secondary School</h4>
+                </div>
+                <div class="timeline-badge-group">
+                  <span class="badge-status-chip completed">Completed</span>
+                  <span class="badge-score">46.00%</span>
+                </div>
+              </div>
+              <p class="timeline-desc">
+                Completed secondary education laying foundational knowledge in science, language, social science, and mathematics.
+              </p>
+              <div class="timeline-tags">
+                <span class="tech-tag">Tamil Nadu State Board</span>
+                <span class="tech-tag">Foundational Sciences</span>
+                <span class="tech-tag">Logical Reasoning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Competencies</span>
+          <h2 class="section-title">Technical & Soft Skills</h2>
+          <p class="section-subtitle">The software toolset and interpersonal strengths I bring to collaborative teams.</p>
+        </div>
+
+        <!-- Skill Tabs / Segment Control -->
+        <div class="skills-tab-bar">
+          <button class="skill-tab-btn active" data-tab="technical">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            Technical Skills
+          </button>
+          <button class="skill-tab-btn" data-tab="soft">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            Soft & Interpersonal Skills
+          </button>
+        </div>
+
+        <!-- Technical Skills Grid -->
+        <div id="tech-skills-panel" class="skills-panel active">
+          <div class="skills-grid">
+            <!-- C Language -->
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <div class="skill-icon-box c-lang">
+                  <span class="code-symbol">C</span>
+                </div>
+                <div class="skill-info">
+                  <h3 class="skill-name">C Language</h3>
+                  <span class="skill-type">Procedural Programming</span>
+                </div>
+              </div>
+              <p class="skill-detail">
+                Strong understanding of pointers, memory structures, functions, arrays, recursion, and core computational logic.
+              </p>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-header">
+                  <span>Proficiency</span>
+                  <span>Core Foundational</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 78%;"></div>
+                </div>
+              </div>
+              <div class="skill-card-tags">
+                <span>Pointers</span>
+                <span>Structures</span>
+                <span>File I/O</span>
+                <span>Algorithms</span>
+              </div>
+            </div>
+
+            <!-- C++ Language -->
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <div class="skill-icon-box cpp-lang">
+                  <span class="code-symbol">C++</span>
+                </div>
+                <div class="skill-info">
+                  <h3 class="skill-name">C++</h3>
+                  <span class="skill-type">Object-Oriented Programming</span>
+                </div>
+              </div>
+              <p class="skill-detail">
+                Solid comprehension of classes, objects, inheritance, polymorphism, encapsulation, abstraction, and STL essentials.
+              </p>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-header">
+                  <span>Proficiency</span>
+                  <span>Intermediate OOP</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 75%;"></div>
+                </div>
+              </div>
+              <div class="skill-card-tags">
+                <span>OOP</span>
+                <span>Classes & Objects</span>
+                <span>Inheritance</span>
+                <span>Standard Library</span>
+              </div>
+            </div>
+
+            <!-- Python -->
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <div class="skill-icon-box python-lang">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.43 9.79 8.21 11.39.6.11.82-.26.82-.58 0-.28-.01-1.04-.02-2.04-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22 0 1.61-.01 2.9-.01 3.29 0 .32.22.7.83.58C20.57 21.79 24 17.31 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div class="skill-info">
+                  <h3 class="skill-name">Python</h3>
+                  <span class="skill-type">Scripting & High-Level Logic</span>
+                </div>
+              </div>
+              <p class="skill-detail">
+                Clean scripting syntax, data structures (lists, tuples, dictionaries), functional utilities, and automation basics.
+              </p>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-header">
+                  <span>Proficiency</span>
+                  <span>Practical Scripting</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 72%;"></div>
+                </div>
+              </div>
+              <div class="skill-card-tags">
+                <span>Data Types</span>
+                <span>Collections</span>
+                <span>Control Flow</span>
+                <span>Problem Solving</span>
+              </div>
+            </div>
+
+            <!-- HTML5 -->
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <div class="skill-icon-box html-lang">
+                  <span class="code-symbol">&lt;/&gt;</span>
+                </div>
+                <div class="skill-info">
+                  <h3 class="skill-name">HTML5</h3>
+                  <span class="skill-type">Semantic Web Markup</span>
+                </div>
+              </div>
+              <p class="skill-detail">
+                Structuring modern web interfaces using clean semantic markup, accessible tags, forms, tables, and document hierarchy.
+              </p>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-header">
+                  <span>Proficiency</span>
+                  <span>Strong Markup</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 82%;"></div>
+                </div>
+              </div>
+              <div class="skill-card-tags">
+                <span>Semantic HTML</span>
+                <span>Forms & Validation</span>
+                <span>SEO Basics</span>
+                <span>Accessibility</span>
+              </div>
+            </div>
+
+            <!-- CSS3 -->
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <div class="skill-icon-box css-lang">
+                  <span class="code-symbol">#</span>
+                </div>
+                <div class="skill-info">
+                  <h3 class="skill-name">CSS3</h3>
+                  <span class="skill-type">Styling & Responsive Layouts</span>
+                </div>
+              </div>
+              <p class="skill-detail">
+                Creating aesthetic and adaptive user interfaces with Flexbox, Grid, media queries, CSS variables, transitions, and animations.
+              </p>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-header">
+                  <span>Proficiency</span>
+                  <span>Responsive Design</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 77%;"></div>
+                </div>
+              </div>
+              <div class="skill-card-tags">
+                <span>Flexbox & Grid</span>
+                <span>Media Queries</span>
+                <span>Transitions</span>
+                <span>Design Tokens</span>
+              </div>
+            </div>
+
+            <!-- Operating Systems -->
+            <div class="skill-card glass-card">
+              <div class="skill-card-top">
+                <div class="skill-icon-box os-lang">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <div class="skill-info">
+                  <h3 class="skill-name">Operating Systems</h3>
+                  <span class="skill-type">Core Computer Architecture</span>
+                </div>
+              </div>
+              <p class="skill-detail">
+                Foundations of process lifecycle, CPU scheduling, memory management, file systems, concurrency, and OS commands.
+              </p>
+              <div class="skill-bar-wrapper">
+                <div class="skill-bar-header">
+                  <span>Proficiency</span>
+                  <span>Core Theory & Concepts</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 70%;"></div>
+                </div>
+              </div>
+              <div class="skill-card-tags">
+                <span>Process Mgmt</span>
+                <span>Memory Virtualization</span>
+                <span>File Systems</span>
+                <span>CLI Navigation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills Grid -->
+        <div id="soft-skills-panel" class="skills-panel">
+          <div class="soft-skills-grid">
+            <!-- Observation -->
+            <div class="soft-card glass-card">
+              <div class="soft-icon-wrap">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <h3>Observation</h3>
+              <p class="soft-desc">
+                High attention to detail when analyzing code, debugging edge cases, identifying subtle patterns, and noticing system anomalies before they become critical issues.
+              </p>
+              <div class="soft-benefit">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Accurate error spotting & deep analytical focus</span>
+              </div>
+            </div>
+
+            <!-- Decision Making -->
+            <div class="soft-card glass-card">
+              <div class="soft-icon-wrap">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                </svg>
+              </div>
+              <h3>Decision Making</h3>
+              <p class="soft-desc">
+                Logical and prompt evaluation of trade-offs under constraints, whether selecting appropriate data structures or prioritizing tasks in fast-moving environments.
+              </p>
+              <div class="soft-benefit">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Rational problem breakdown & clear resolution</span>
+              </div>
+            </div>
+
+            <!-- Communication -->
+            <div class="soft-card glass-card">
+              <div class="soft-icon-wrap">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <h3>Communication</h3>
+              <p class="soft-desc">
+                Clear, respectful, and articulate interaction with peers and mentors. Ability to explain thought processes, document code, and actively listen to feedback.
+              </p>
+              <div class="soft-benefit">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Active listener & transparent team collaborator</span>
+              </div>
+            </div>
+
+            <!-- Multitasking -->
+            <div class="soft-card glass-card">
+              <div class="soft-icon-wrap">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3>Multitasking</h3>
+              <p class="soft-desc">
+                Competently balancing academic deadlines, athletic training, self-paced technical learning, and community volunteering through effective time management.
+              </p>
+              <div class="soft-benefit">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Organized scheduling & calm under pressure</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACTIVITIES & INTERESTS SECTION -->
+    <section id="activities" class="section activities-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Life & Passions</span>
+          <h2 class="section-title">Activities & Personal Interests</h2>
+          <p class="section-subtitle">Extracurricular pursuits that develop my physical stamina, teamwork, empathy, and creativity.</p>
+        </div>
+
+        <div class="activities-grid">
+          <!-- Cricket -->
+          <div class="activity-card glass-card">
+            <div class="activity-banner cricket-theme">
+              <div class="activity-icon-badge">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+                </svg>
+              </div>
+              <span class="activity-badge">Team Sports</span>
+            </div>
+            <div class="activity-body">
+              <h3 class="activity-title">Cricket</h3>
+              <p class="activity-text">
+                Passionate cricket player. Playing matches has honed my teamwork, strategic positioning, quick on-field judgment, and resilience under match pressure.
+              </p>
+              <div class="activity-takeaway">
+                <strong>Key Takeaway:</strong> Team synchronization & strategic anticipation.
+              </div>
+            </div>
+          </div>
+
+          <!-- Athletics / Running -->
+          <div class="activity-card glass-card">
+            <div class="activity-banner athletics-theme">
+              <div class="activity-icon-badge">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <span class="activity-badge">Endurance</span>
+            </div>
+            <div class="activity-body">
+              <h3 class="activity-title">Athletics / Running</h3>
+              <p class="activity-text">
+                Regular sprint and endurance running enthusiast. Cultivates rigorous physical fitness, mental discipline, daily dedication, and individual perseverance to cross the finish line.
+              </p>
+              <div class="activity-takeaway">
+                <strong>Key Takeaway:</strong> Tenacity, stamina & personal goal setting.
+              </div>
+            </div>
+          </div>
+
+          <!-- Arts -->
+          <div class="activity-card glass-card">
+            <div class="activity-banner arts-theme">
+              <div class="activity-icon-badge">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="M2 2l7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+              </div>
+              <span class="activity-badge">Creativity</span>
+            </div>
+            <div class="activity-body">
+              <h3 class="activity-title">Arts & Sketching</h3>
+              <p class="activity-text">
+                Engaging in creative artwork and sketching sparks imagination and attention to visual balance—directly influencing my sense of front-end web design and interface layout.
+              </p>
+              <div class="activity-takeaway">
+                <strong>Key Takeaway:</strong> Visual aesthetics & creative problem solving.
+              </div>
+            </div>
+          </div>
+
+          <!-- Volunteering -->
+          <div class="activity-card glass-card">
+            <div class="activity-banner volunteering-theme">
+              <div class="activity-icon-badge">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </div>
+              <span class="activity-badge">Social Impact</span>
+            </div>
+            <div class="activity-body">
+              <h3 class="activity-title">Volunteering</h3>
+              <p class="activity-text">
+                Actively participating in local and college community initiatives. Fosters genuine empathy, social accountability, organizational coordination, and service mindset.
+              </p>
+              <div class="activity-takeaway">
+                <strong>Key Takeaway:</strong> Empathy, civic duty & collaborative spirit.
+              </div>
+            </div>
+          </div>
+
+          <!-- Book Reading -->
+          <div class="activity-card glass-card">
+            <div class="activity-banner reading-theme">
+              <div class="activity-icon-badge">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <span class="activity-badge">Knowledge</span>
+            </div>
+            <div class="activity-body">
+              <h3 class="activity-title">Book Reading</h3>
+              <p class="activity-text">
+                Avid reader of motivational books, scientific general knowledge, and personal growth literature. Continually broadens perspectives, vocabulary, and intellectual curiosity.
+              </p>
+              <div class="activity-takeaway">
+                <strong>Key Takeaway:</strong> Continuous self-education & mental clarity.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Get In Touch</span>
+          <h2 class="section-title">Let's Connect & Build Together</h2>
+          <p class="section-subtitle">Interested in offering a job opportunity, internship, or discussing an opening? Reach out directly!</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-col">
+            <div class="contact-card glass-card">
+              <div class="contact-card-icon email-color">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-label">Email Address</span>
+                <a href="mailto:giriarasul244@gmail.com" class="contact-value" id="email-link">giriarasul244@gmail.com</a>
+              </div>
+              <button class="copy-btn" data-copy="giriarasul244@gmail.com" title="Copy Email" aria-label="Copy Email">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="contact-card glass-card">
+              <div class="contact-card-icon phone-color">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-label">Phone / Mobile</span>
+                <a href="tel:+916383779049" class="contact-value" id="phone-link">+91 6383779049</a>
+              </div>
+              <button class="copy-btn" data-copy="+916383779049" title="Copy Phone Number" aria-label="Copy Phone">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="contact-card glass-card">
+              <div class="contact-card-icon location-color">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-label">Location</span>
+                <span class="contact-value text-muted">West Rajapalayam, Salem, Tamil Nadu, India</span>
+              </div>
+            </div>
+
+            <!-- Quick Action Links -->
+            <div class="quick-links-group">
+              <a href="https://wa.me/916383779049?text=Hi%20Giriarasu,%20we%20reviewed%20your%20portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+                <span>Chat via WhatsApp</span>
+              </a>
+
+              <a href="mailto:giriarasul244@gmail.com?subject=Job%20Opportunity%20for%20Giriarasu%20S&body=Hi%20Giriarasu,%20we%20reviewed%20your%20profile%20and%20would%20like%20to%20discuss%20an%20opportunity." class="btn btn-outline">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Direct Email</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-col">
+            <form id="contact-form" class="contact-form glass-card" novalidate>
+              <h3 class="form-title">Send a Direct Message</h3>
+              <p class="form-desc">Fill out this quick form to send me an inquiry or schedule an interview.</p>
+
+              <div class="form-group">
+                <label for="sender-name">Your Full Name <span class="required">*</span></label>
+                <input type="text" id="sender-name" name="name" class="form-input" placeholder="e.g. John Doe / Tech Recruiter" required>
+                <span class="error-msg" id="name-error">Please enter your name</span>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-email">Your Email Address <span class="required">*</span></label>
+                <input type="email" id="sender-email" name="email" class="form-input" placeholder="e.g. recruiter@company.com" required>
+                <span class="error-msg" id="email-error">Please enter a valid email address</span>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-subject">Subject / Position Title <span class="required">*</span></label>
+                <input type="text" id="sender-subject" name="subject" class="form-input" placeholder="e.g. Junior Developer Role / Interview Discussion" required>
+                <span class="error-msg" id="subject-error">Please enter a subject</span>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-message">Your Message <span class="required">*</span></label>
+                <textarea id="sender-message" name="message" rows="4" class="form-textarea" placeholder="Write your message, company details, or role requirements..." required></textarea>
+                <span class="error-msg" id="message-error">Please write a short message</span>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
+                <span>Send Inquiry</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RESUME MODAL & PRINTABLE ATS VIEW -->
+  <div id="resume-modal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-container glass-card" role="dialog" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <div>
+          <h2 id="modal-title" class="modal-heading">Giriarasu S — Official Resume</h2>
+          <p class="modal-sub">Formatted, printable & ATS-friendly view for recruiters</p>
+        </div>
+        <button id="close-modal-btn" class="modal-close-btn" aria-label="Close Resume Preview">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-actions-bar">
+        <button id="print-resume-btn" class="btn btn-primary btn-sm">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          <span>Print / Save as PDF</span>
+        </button>
+
+        <a href="mailto:giriarasul244@gmail.com?subject=Resume%20Request%20for%20Giriarasu%20S" class="btn btn-outline btn-sm">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span>Request Word / DOCX</span>
+        </a>
+      </div>
+
+      <!-- Printable Resume Sheet -->
+      <div id="printable-resume" class="resume-sheet">
+        <div class="resume-header">
+          <h1 class="resume-name">GIRIARASU S</h1>
+          <div class="resume-target">B.Sc Computer Science Graduate | Aspiring Software Developer</div>
+          <div class="resume-contacts">
+            <span>Salem, Tamil Nadu, India</span> • 
+            <span>+91 6383779049</span> • 
+            <span>giriarasul244@gmail.com</span>
+          </div>
+        </div>
+
+        <hr class="resume-rule">
+
+        <!-- Objective -->
+        <div class="resume-block">
+          <h3 class="resume-sec-title">CAREER OBJECTIVE</h3>
+          <p class="resume-sec-text">
+            To secure an entry-level position in a progressive organization where I can continuously improve my technical knowledge, apply problem-solving acumen, and contribute through dedication and hard work to drive organizational growth.
+          </p>
+        </div>
+
+        <!-- Education -->
+        <div class="resume-block">
+          <h3 class="resume-sec-title">EDUCATION</h3>
+          
+          <div class="resume-edu-item">
+            <div class="resume-edu-row">
+              <strong>Muthayammal College of Arts & Science</strong>
+              <span class="resume-date">Pursuing</span>
+            </div>
+            <div class="resume-edu-row sub">
+              <em>Bachelor of Science in Computer Science (B.Sc CS)</em>
+              <strong>48.40%</strong>
+            </div>
+          </div>
+
+          <div class="resume-edu-item">
+            <div class="resume-edu-row">
+              <strong>Government Boys Higher Secondary School</strong>
+              <span class="resume-date">Completed</span>
+            </div>
+            <div class="resume-edu-row sub">
+              <em>Higher Secondary Certificate (HSC - 12th)</em>
+              <strong>48.00%</strong>
+            </div>
+          </div>
+
+          <div class="resume-edu-item">
+            <div class="resume-edu-row">
+              <strong>Government Higher Secondary School</strong>
+              <span class="resume-date">Completed</span>
+            </div>
+            <div class="resume-edu-row sub">
+              <em>Secondary School Leaving Certificate (SSLC - 10th)</em>
+              <strong>46.00%</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="resume-block">
+          <h3 class="resume-sec-title">TECHNICAL SKILLS</h3>
+          <ul class="resume-list">
+            <li><strong>Programming Languages:</strong> C, C++, Python</li>
+            <li><strong>Web Technologies:</strong> HTML5, CSS3</li>
+            <li><strong>Core Fundamentals:</strong> Operating Systems, Basic Algorithms, Computer Architecture</li>
+          </ul>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="resume-block">
+          <h3 class="resume-sec-title">SOFT SKILLS</h3>
+          <p class="resume-sec-text">Observation, Decision Making, Active Communication, Multitasking, Adaptability.</p>
+        </div>
+
+        <!-- Activities & Interests -->
+        <div class="resume-block">
+          <h3 class="resume-sec-title">ACTIVITIES & INTERESTS</h3>
+          <p class="resume-sec-text">Cricket (Team building), Athletics & Running (Discipline & Endurance), Arts (Creative focus), Community Volunteering, Book Reading.</p>
+        </div>
+
+        <!-- Personal Details -->
+        <div class="resume-block">
+          <h3 class="resume-sec-title">PERSONAL PARTICULARS</h3>
+          <ul class="resume-list inline-meta">
+            <li><strong>Address:</strong> West Rajapalayam, Salem, Tamil Nadu, India</li>
+            <li><strong>Languages Known:</strong> English, Tamil</li>
+            <li><strong>Availability:</strong> Immediate</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <span class="logo-box">GS</span>
+            <div class="logo-text">
+              <span class="name">GIRIARASU S</span>
+              <span class="role">B.Sc Computer Science</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            Building software with passion, enthusiasm, and continuous curiosity. Ready to contribute to progressive engineering teams.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-nav">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#activities">Activities</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Contact Details</h4>
+            <ul class="footer-nav">
+              <li><a href="mailto:giriarasul244@gmail.com">giriarasul244@gmail.com</a></li>
+              <li><a href="tel:+916383779049">+91 6383779049</a></li>
+              <li><span>Salem, Tamil Nadu, India</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 GIRIARASU S. All Rights Reserved. Crafted with clean HTML, CSS & JavaScript.</p>
+        <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
